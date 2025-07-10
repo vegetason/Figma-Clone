@@ -5,10 +5,10 @@ import dotenv from "dotenv"
 import pg from "pg"
 
 dotenv.config()
-const databaseUrl=process.env.DATABASE_URL as any
-const dbName=process.env.DB_NAME as any;
-const dbUsername=process.env.DB_USERNAME as any;
-const dbPassword=process.env.DB_PASSWORD as any
+const databaseUrl=process.env.DATABASE_URL!;
+const dbName=process.env.DB_NAME!;
+const dbUsername=process.env.DB_USERNAME!;
+const dbPassword=process.env.DB_PASSWORD!
 const PORT = process.env.PORT || 3000;
 
 
